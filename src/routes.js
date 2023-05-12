@@ -100,6 +100,8 @@ import EditCopyrightContent from "./views/settings/copyright/edit";
 import AddStickyButton from "./views/settings/stikcyButton/add";
 // import CopyrightContentSlug from "./views/settings/copyright/table";
 
+ import ViewTeamDetails from "./views/indian-t20-league/teams-detail/viewTeamDetails";
+
 const routes = [
   { path: "/dashboard", exact: true, name: "Home" },
   { path: "/dashboard", name: "Dashboard", element: Dashboard },
@@ -254,6 +256,11 @@ const routes = [
     path: "/indian-t20-league/team-details/edit/:id",
     name: "Indian-T20-League / Team-Details / Edit",
     element: EditTeamDetails,
+  },
+  {
+    path: "/indian-t20-league/team-details/view/:id",
+    name: "Indian-T20-League / Team-Details / View",
+    element: ViewTeamDetails,
   },
   {
     path: "/download",
